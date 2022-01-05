@@ -1,0 +1,5 @@
+nvic.c:20:6:NVIC_voidEnableInterrupt	16	static
+nvic.c:30:6:NVIC_voidDisableInterrupt	16	static
+nvic.c:40:6:NVIC_voidSetPendingFlag	16	static
+nvic.c:50:6:NVIC_voidResetPendingFlag	16	static
+nvic.c:55:4:NVIC_voidGetActiveFlag	16	static

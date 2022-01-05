@@ -1,0 +1,4 @@
+exti.c:14:6:EXTI_enableInterruptChannel	16	static
+exti.c:42:6:EXTI_disableInterruptChannel	16	static
+exti.c:51:6:EXTI_SoftwareInterrupt	16	static
+exti.c:56:4:EXTI_getPendingBit	24	static
