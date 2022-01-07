@@ -3,6 +3,7 @@
 "./Src/gpio.o"
 "./Src/main.o"
 "./Src/nvic.o"
+"./Src/rcc.o"
 "./Src/svn_segment.o"
 "./Src/uart.o"
 "./Startup/startup_stm32f401ccfx.o"

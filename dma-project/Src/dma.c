@@ -6,6 +6,7 @@
 #include "MATH_macros.h"
 #include "STD_types.h"
 
+#include "rcc.h"
 #include "dma.h"
 
 #define RCC_AHB1ENR		*((volatile u32*)(0x40023800 + 0x30))
@@ -14,12 +15,19 @@
 /*						FUNCTION DEFINITIONS				*/
 /************************************************************/
 void DMA_voidInit(DMA_dtype* DMA_ptr){
-	SET_BIT(RCC_AHB1ENR, 21);
-	SET_BIT(RCC_AHB1ENR, 22);
+	if((u32)DMA_ptr == (u32)DMA1_BASE_ADDRESS){
+		SET_BIT(RCC_AHB1ENR, 21);
+	}
+	else{
+		SET_BIT(RCC_AHB1ENR, 22);
+	}
 }
 
 
 ErrorStatus DMA_voidConfigureStream(DMA_dtype* DMA_ptr, u8 stream_idx, streamCofig_dtype* streamConfig_ptr){
+	if(stream_idx > 7){
+		return ERROR;
+	}
 
 	if((streamConfig_ptr->transfer_direction == MEMORY_TO_MEMORY) && ((u32)DMA_ptr == (u32)DMA1_BASE_ADDRESS)){
 		return ERROR;
@@ -147,7 +155,6 @@ ErrorStatus DMA_voidConfigureStream(DMA_dtype* DMA_ptr, u8 stream_idx, streamCof
 void DMA_voidStartTransfer(DMA_dtype* DMA_ptr, u8 stream_idx){
 	SET_BIT(DMA_ptr->S[stream_idx].CR, 0);
 }
-
 
 transferState_dtype DMA_transferState(DMA_dtype* DMA_ptr, u8 stream_idx){
 	if(GET_BIT(DMA_ptr->ISR[stream_idx / 2], (FIFO_ERROR << (6 * (stream_idx % 2)))))

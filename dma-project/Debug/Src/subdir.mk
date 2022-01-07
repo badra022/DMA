@@ -10,6 +10,7 @@ C_SRCS += \
 ../Src/gpio.c \
 ../Src/main.c \
 ../Src/nvic.c \
+../Src/rcc.c \
 ../Src/svn_segment.c \
 ../Src/uart.c 
 
@@ -19,6 +20,7 @@ OBJS += \
 ./Src/gpio.o \
 ./Src/main.o \
 ./Src/nvic.o \
+./Src/rcc.o \
 ./Src/svn_segment.o \
 ./Src/uart.o 
 
@@ -28,6 +30,7 @@ C_DEPS += \
 ./Src/gpio.d \
 ./Src/main.d \
 ./Src/nvic.d \
+./Src/rcc.d \
 ./Src/svn_segment.d \
 ./Src/uart.d 
 
