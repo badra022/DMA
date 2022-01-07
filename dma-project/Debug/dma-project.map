@@ -73,8 +73,8 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x40 ./Src/exti.o
  .debug_macro   0x0000000000000000       0x94 ./Src/exti.o
  .debug_macro   0x0000000000000000       0x64 ./Src/exti.o
- .debug_line    0x0000000000000000      0x144 ./Src/exti.o
- .debug_str     0x0000000000000000     0x33f8 ./Src/exti.o
+ .debug_line    0x0000000000000000      0x138 ./Src/exti.o
+ .debug_str     0x0000000000000000     0x33ec ./Src/exti.o
  .comment       0x0000000000000000       0x54 ./Src/exti.o
  .debug_frame   0x0000000000000000       0xb0 ./Src/exti.o
  .ARM.attributes
@@ -167,8 +167,8 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x40 ./Src/svn_segment.o
  .debug_macro   0x0000000000000000       0x94 ./Src/svn_segment.o
  .debug_macro   0x0000000000000000       0x4c ./Src/svn_segment.o
- .debug_line    0x0000000000000000      0x136 ./Src/svn_segment.o
- .debug_str     0x0000000000000000     0x3235 ./Src/svn_segment.o
+ .debug_line    0x0000000000000000      0x12a ./Src/svn_segment.o
+ .debug_str     0x0000000000000000     0x3229 ./Src/svn_segment.o
  .comment       0x0000000000000000       0x54 ./Src/svn_segment.o
  .debug_frame   0x0000000000000000       0x58 ./Src/svn_segment.o
  .ARM.attributes
@@ -744,30 +744,30 @@ LOAD d:/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externa
  .debug_macro   0x0000000000001711      0x339 ./Src/uart.o
  .debug_macro   0x0000000000001a4a      0x1a9 ./Src/uart.o
 
-.debug_line     0x0000000000000000     0x121a
- .debug_line    0x0000000000000000      0x359 ./Src/dma.o
- .debug_line    0x0000000000000359      0x237 ./Src/gpio.o
- .debug_line    0x0000000000000590      0x193 ./Src/main.o
- .debug_line    0x0000000000000723      0x14c ./Src/nvic.o
- .debug_line    0x000000000000086f      0x1cf ./Src/rcc.o
- .debug_line    0x0000000000000a3e      0x759 ./Src/uart.o
- .debug_line    0x0000000000001197       0x83 ./Startup/startup_stm32f401ccfx.o
+.debug_line     0x0000000000000000     0x11d2
+ .debug_line    0x0000000000000000      0x34d ./Src/dma.o
+ .debug_line    0x000000000000034d      0x22b ./Src/gpio.o
+ .debug_line    0x0000000000000578      0x187 ./Src/main.o
+ .debug_line    0x00000000000006ff      0x140 ./Src/nvic.o
+ .debug_line    0x000000000000083f      0x1c3 ./Src/rcc.o
+ .debug_line    0x0000000000000a02      0x74d ./Src/uart.o
+ .debug_line    0x000000000000114f       0x83 ./Startup/startup_stm32f401ccfx.o
 
-.debug_str      0x0000000000000000     0x8c85
- .debug_str     0x0000000000000000     0x3d3a ./Src/dma.o
-                                       0x3e0e (size before relaxing)
- .debug_str     0x0000000000003d3a      0x578 ./Src/gpio.o
-                                       0x3477 (size before relaxing)
- .debug_str     0x00000000000042b2      0x7ad ./Src/main.o
-                                       0x3ebb (size before relaxing)
- .debug_str     0x0000000000004a5f       0xc8 ./Src/nvic.o
-                                       0x31bc (size before relaxing)
- .debug_str     0x0000000000004b27       0xf2 ./Src/rcc.o
-                                       0x3953 (size before relaxing)
- .debug_str     0x0000000000004c19     0x403b ./Src/uart.o
-                                       0x7aa0 (size before relaxing)
- .debug_str     0x0000000000008c54       0x31 ./Startup/startup_stm32f401ccfx.o
-                                         0x72 (size before relaxing)
+.debug_str      0x0000000000000000     0x8c79
+ .debug_str     0x0000000000000000     0x3d2e ./Src/dma.o
+                                       0x3e02 (size before relaxing)
+ .debug_str     0x0000000000003d2e      0x578 ./Src/gpio.o
+                                       0x346b (size before relaxing)
+ .debug_str     0x00000000000042a6      0x7ad ./Src/main.o
+                                       0x3eaf (size before relaxing)
+ .debug_str     0x0000000000004a53       0xc8 ./Src/nvic.o
+                                       0x31b0 (size before relaxing)
+ .debug_str     0x0000000000004b1b       0xf2 ./Src/rcc.o
+                                       0x3947 (size before relaxing)
+ .debug_str     0x0000000000004c0d     0x403b ./Src/uart.o
+                                       0x7a94 (size before relaxing)
+ .debug_str     0x0000000000008c48       0x31 ./Startup/startup_stm32f401ccfx.o
+                                         0x66 (size before relaxing)
 
 .comment        0x0000000000000000       0x53
  .comment       0x0000000000000000       0x53 ./Src/dma.o
