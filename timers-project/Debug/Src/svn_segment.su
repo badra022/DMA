@@ -1,0 +1,2 @@
+svn_segment.c:15:6:svn_segment_write	24	static
+svn_segment.c:22:6:svn_segment_init	24	static
