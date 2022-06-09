@@ -1,4 +1,0 @@
-dma.c:17:6:DMA_voidInit	16	static
-dma.c:27:13:DMA_voidConfigureStream	32	static
-dma.c:155:6:DMA_voidStartTransfer	16	static
-dma.c:159:21:DMA_transferState	16	static

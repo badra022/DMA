@@ -1,5 +1,0 @@
-rcc.c:18:6:RCC_voidEnableClock	16	static
-rcc.c:35:6:RCC_initSystemClock	4	static
-rcc.c:193:6:RCC_voidDisableClock	16	static
-rcc.c:209:13:updateSystemClock	32	static
-rcc.c:259:5:RCC_u32GetSystemClock	8	static
